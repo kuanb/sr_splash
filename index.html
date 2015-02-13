@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+        <title>SKYRISE</title>
+        <!-- style links -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel='stylesheet'>
+
+		<!-- jquery library -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	    <style>
+	    	body{
+				background: url(nyc_skyline.jpg) no-repeat center center fixed; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				
+				font-family: 'Lato', sans-serif;
+			}
+			div.cn {
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+				background-color:rgba(0,0,0,0.75);
+
+				color: white;
+				font-size: 0.8vw;
+				font-weight: 100;
+				letter-spacing: 0.8vw;
+			}
+			@media screen and (max-width: 600px) {
+				div.cn {
+					font-size: 7px;
+				}
+			}
+			div.cn>div {
+				padding-top: 10%;
+
+				color: white;
+				font-size: 0.8vw;
+				font-weight: 100;
+				letter-spacing: 0.15vw;
+			}
+			div.cn>div p {
+				padding-top: 10px;
+				color: white;
+				font-size: 8px;
+				font-weight: 100;
+				letter-spacing: 5px;
+			}
+			div.cn>div>form>input {
+				width:200px;
+				white-space:nowrap;
+			}
+			.logo {
+				width: 50%;
+				min-width:300px;
+				margin: 2%;
+			}
+			.form-control {
+				background-color:rgba(950,950,950,0.25);
+				border-width:1px;
+				border-radius:0px;
+				border-color:white;
+				margin:0px;
+				width:200px !important;
+
+				color:white;
+				font-family: 'Lato', sans-serif;
+				font-weight: 100;
+				float:left;
+			}
+			.form-control:-moz-placeholder {
+				color:white;
+			}
+			.form-control::-moz-placeholder {
+				color:white;
+				opacity: 1;
+			}
+			.form-control:-ms-input-placeholder {
+				color:white;
+			}
+			.form-control::-webkit-input-placeholder {
+				color:white;
+			}
+			.btn {
+				background-color:rgba(950,950,950,0.25);
+				border-width:1px;
+				border-left-width:0px;
+				border-radius:0px;
+				border-color:white;
+				margin:0px;
+				/*float:left;*/
+
+				color:white;
+				font-family: 'Lato', sans-serif;
+				font-weight: 100;
+			}
+			.btn:hover {
+				background-color:rgba(950,950,950,0.5);
+				color:white;
+				font-family: 'Lato', sans-serif;
+				font-weight: 300;
+			}
+	    </style>
+    </head>
+
+    <body>
+
+	<div class="cn">
+    	<img src="sr_logo.svg" class="logo"/>
+    	<br>
+    	CLOUD BASED REAL ESTATE ASSET MANAGEMENT
+    	<br>
+    	<div class="col-sm-12">
+			<form style="margin-left:auto;margin-right:auto;">
+			<center>
+				<div style="width:277px">
+					<input type="email" class="form-control" placeholder="email@example.com">
+					<button type="submit" class="btn">SUBMIT</button>
+				</div>
+			</center>
+			<center>
+    			<p>SIGN UP FOR MORE INFORMATION</p>
+    		</center>
+			</form>
+    	</div>
+    </div>
+
+    </body>
+
+    <script>
+    	$('.cn').height($(window).height())
+    	$('.cn').width($(window).width())
+
+    </script>
+
+</html>
